@@ -10,7 +10,7 @@ deploy:
   region: us-west-2 
   app: "chef"
   env: "productionEnv"
-  bucket_name: "chefback"
+  bucket_name: "elasticbeanstalk-us-west-2-805245218516"
 
 
 
