@@ -10,7 +10,7 @@ deploy:
   region: us-west-2 
   app: "chef"
   env: "productionEnv"
-  bucket: "chefback"
+  bucket_name: "chefback"
   region: us-west-2
 
 
