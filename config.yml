@@ -7,9 +7,9 @@ branch-defaults:
 global:
   application_name: chef
   default_ec2_keyname: null
-  default_platform: arn:aws:elasticbeanstalk:us-west-2::platform/Docker running on
-    64bit Amazon Linux/2.12.11
-  default_region: us-west-2
+  default_platform: arn:aws:elasticbeanstalk:us-east-1::platform/Docker running on
+    64bit Amazon Linux/2.12.12
+  default_region: us-east-1
   instance_profile: null
   platform_name: null
   platform_version: null
