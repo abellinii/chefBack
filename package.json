@@ -27,6 +27,7 @@
     "lodash.isempty": "^4.4.0",
     "material-ui-pickers": "^2.2.4",
     "moment": "^2.24.0",
+    "mongoose": "^5.6.0",
     "npm": "^6.9.0",
     "react": "^16.8.6",
     "react-datepicker": "^2.6.0",
