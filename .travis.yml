@@ -12,7 +12,6 @@ addons:
       - g++-4.8
 before_install:
   - npm i -g npm@6.9.0
-cache: npm
 
 deploy:
   provider: elasticbeanstalk
