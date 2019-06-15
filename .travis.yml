@@ -2,9 +2,6 @@ sudo: required
 language: node_js
 node_js:
   - node
-cache:
-  directories:
-    - node_modules
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
