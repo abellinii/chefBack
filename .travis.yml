@@ -2,7 +2,9 @@ sudo: required
 language: node_js
 node_js:
   - node
-
+install:
+  - npm i -g npm@5.7.1 # this should be deleted once 5.7.X is out of "pre-release"
+  - npm ci 
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
