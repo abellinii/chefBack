@@ -2,12 +2,7 @@ sudo: required
 language: node_js
 node_js:
   - node
-install:
-- npm ci
-# keep the npm cache around to speed up installs
-cache:
-  directories:
-  - "$HOME/.npm"
+
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
