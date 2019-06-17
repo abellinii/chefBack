@@ -2,9 +2,7 @@
 # Load the alpine base image
 FROM node:8
 
-# Install depedencies
-RUN apk update && apk add -U nodejs yarn
-RUN node --version
+
 
 
 # Create the working directory
