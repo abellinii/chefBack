@@ -12,7 +12,7 @@ RUN mkdir -p /var/www/api
 COPY . /var/www/api/
 
 
-RUN npm ci
+RUN npm install
 
 # Set the working directory to the created directory
 WORKDIR /var/www/api
