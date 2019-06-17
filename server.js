@@ -6,7 +6,7 @@ const logger = require('morgan');
 const User = require('./api/users');
 const Food = require('./api/food');
 const Data = require('./api/data');
-const API_PORT = 3001;
+const API_PORT = 3000;
 const app = express();
 app.use(cors());
 const router = express.Router();
