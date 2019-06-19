@@ -51,6 +51,19 @@ app.use(logger('dev'));
 
 // this is our get method
 // this method fetches all available data in our database
+
+
+
+router.get('/', (req, res) => {
+   
+
+
+ res.JSON({Check:"Success"})
+
+
+});
+
+
 router.get('/getData', (req, res) => {
    
 
