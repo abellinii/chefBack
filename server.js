@@ -250,7 +250,6 @@ router.post('/putData', (req, res) => {
 });
 
 
-
 // append /api for our http requests
 app.use('/api', router);
 
