@@ -106,13 +106,24 @@ router.get('/getUserinfo/:user',(req,res)=>{
 
 
 //Get weeks meal plan
-router.get('/getWeekMeal/:week',(req,res)=>{
-  User.findOne({"weeks.weekID":req.params.week},{_id:0,"weeks.weeksRecipes.$":1}, (err, data) => {
+router.get('/getWeekMeal/:week/:id',(req,res)=>{
+ 
     
-    if (err) return res.json({ success: false, error: err });
+  
+  User.findOne({"_id":req.params.id,"weeks.weekID":req.params.week},{"_id":0,"weeks.weeksRecipes.$":1}, (err, data) => {
+    
+    if (err){
+           console.log("not found")
+     return res.json({ success: false, error: err });}
+     else{
+      console.log("found")
     return res.json({ success: true, data: data });
-  });
+  }
+});
+
+
 })
+
 
 
 ///add a user
